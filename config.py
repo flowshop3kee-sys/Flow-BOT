@@ -5,7 +5,7 @@ from dotenv import load_dotenv
 load_dotenv()
 
 # Bot Configuration
-BOT_TOKEN = os.getenv("BOT_TOKEN")
+BOT_TOKEN = os.getenv("DISCORD_TOKEN") or os.getenv("BOT_TOKEN")
 GUILD_ID = int(os.getenv("GUILD_ID", 0))
 WEBHOOK_URL = os.getenv("WEBHOOK_URL")
 
